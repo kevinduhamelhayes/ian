@@ -14,15 +14,15 @@ function cambiarTitulo() {
   var titulo = document.getElementById("titulo");
   titulo.innerHTML = nuevoTitulo;
 }
+const input1 = document.querySelector("#calculo1");
+const input2 = document.querySelector("#calculo2");
+const h1 = document.querySelector('h1');
+const btn = document.querySelector('#btnCalcular');
+const pResult = document.querySelector('#result');
 
-const h1=document.querySelector('h1');const p=document.querySelector('p');
-const parrafito=document.getElementsByClassName('parrafito');
-const pid=document.getElementById('pid');const input=document.querySelector('input');
-console.log(input.value);console.log({h1,p,parrafito,pid,input,});
-h1.innerHTML='Patito <br> Feo';h1.innerText='Patito <br> Feo';
-h1.classList.add('rojo');h1.classList.remove('verde');input.value="456"
-const img=document.createElement('img');
-img.setAttribute('src','https://static.platzi.com/static/images/conf/logo_black@2x.png');
-console.log(img);
-pid.innerHTML="";
-pid.appendChild(img);
+btn.addEventListener('click', btnOnClick);
+
+function btnOnClick(){
+  const sumaInputs = input1.value + input2.value;
+  pResult.innerText="Resultado: "+sumaInputs;
+}
