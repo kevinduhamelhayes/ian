@@ -1,0 +1,14 @@
+/* comentarios css
+/* comentarios css 
+para seleccionar por id #id
+para seleccionar por clase .clase
+para seleccionar por etiqueta etiqueta 
+para seleccionar por atributo [atributo]
+para seleccionar por atributo y valor [atributo="valor"]
+para seleccionar por atributo y valor que comience por [atributo^="valor"]
+para seleccionar por atributo y valor que termine por [atributo$="valor"]
+para seleccionar por atributo y valor que contenga [atributo*="valor"]
+para seleccionar por atributo y valor que contenga una palabra [atributo~="valor"]
+para seleccionar por atributo y valor que contenga un valor separado por guiones [atributo|="valor"]
+para seleccionar por atributo y valor que contenga un valor separado por espacios [atributo*="valor"]
+*/

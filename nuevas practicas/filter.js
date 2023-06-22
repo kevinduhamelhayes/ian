@@ -1,4 +1,4 @@
-var Artículos = [
+var Articulos = [
     { nombre: "bici", costo: 3000 },
     { nombre: "tv", costo: 2500 },
     { nombre: "libro", costo: 320 },
@@ -10,7 +10,20 @@ var Artículos = [
     { nombre: "cables", costo: 150 },
     { nombre: "cargador", costo: 300 },
 ]
-var ArtículosFiltrados = Artículos.filter(function (Artículo) {
-    return Artículo.costo <= 500
+var ArticulosFiltrados = Articulos.filter(function (Articulo) {
+    return Articulo.costo <= 500 //retorna todos los articulos que cuestan menos de 500
+});
+var nombreArticulos = Articulos.map(function (Articulo) {
+    return Articulo.nombre //retorna todos los nombres de los articulos
 }
-console.log(ArtículosFiltrados);
+);
+var encuentraArticulo = Articulos.find(function (Articulo) {
+    return Articulo.nombre === "laptop" //retorna el articulo que se llame laptop
+})
+Articulos.forEach(function (Articulo) {
+    console.log(Articulo.nombre) //retorna todos los nombres de los articulos
+})
+
+var ArticulosBaratos = Articulos.some(function (Articulo) {
+    return Articulo.costo <= 700 //retorna true si algun articulo cuesta menos de 700
+})
